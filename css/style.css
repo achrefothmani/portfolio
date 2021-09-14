@@ -1,4 +1,47 @@
-/*!
+video {
+    object-fit: cover;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+  }
+  
+  html, body {
+    height: 100%;
+  }
+  html {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    font-size: 150%;
+    line-height: 1.4;
+  }
+  body {
+    margin: 0;
+  }
+  
+  .viewport-header {
+    position: relative;
+    height: 100vh;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  
+  main {
+    display: none;
+    width: 80vw;
+    left: 10%;
+    height: 40vh;
+    overflow: auto;
+    background: rgba(black, 0.66);
+    color: white;
+    position: relative;
+    padding: 1rem;
+  }
+
+  /*!
 
  =========================================================
  * Coming Sssoon Page - v1.3.2
@@ -676,7 +719,7 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 .cover{
     position: fixed;
     opacity: 1;
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0, 0, 0, 0.432);
     left: 0px;
     top: 0px;
     width: 100%;
@@ -684,10 +727,10 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
     z-index: 1;
 }
 .cover.black{
-    background-color: rgba(0,0,0,.6);
+    background-color: rgba(0, 0, 0, 0.507);
 }
 .cover.blue{
-    background-color: rgba(5, 31, 60, 0.6);
+    background-color: rgba(5, 37, 73, 0.6);
 }
 .cover.green{
     background-color: rgba(3, 28, 7, 0.6);
@@ -951,3 +994,29 @@ h1 small, h2 small, h3 small, h1 .small, h2 .small, h3 .small {
 h1, h2, h3, h4, h5, h6, p, a{
     font-family: 'Poppins', sans-serif;
 }
+
+
+
+
+
+.btn-grad {background-image: linear-gradient(to right, #FF512F 0%, #F09819  51%, #FF512F  100%)}
+.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px rgb(77, 77, 77);
+   border-radius: 12px;
+   display: block;
+ }
+
+ .btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+ }
+
+
