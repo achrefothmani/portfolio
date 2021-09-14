@@ -1019,4 +1019,49 @@ h1, h2, h3, h4, h5, h6, p, a{
    text-decoration: none;
  }
 
+ .btn {
+    background: none;
+    border: 2px solid;
+    border-bottom-width: 4px;
+    font: inherit;
+    letter-spacing: inherit;
+    margin: 1em;
+    padding: 1em 2em;
+    text-transform: inherit;
+    transition: color 1s;
+}
 
+ .btn-4 {
+    color: #eea163;
+ }
+
+ .btn-4:hover {
+    animation: zigzag 1s linear infinite;
+    background: linear-gradient(135deg, rgba(238, 161, 99, 0.25) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(225deg, rgba(238, 161, 99, 0.25) 0.25em, transparent 0.25em) -0.5em 0, linear-gradient(315deg, rgba(238, 161, 99, 0.25) 0.25em, transparent 0.25em) 0 0, linear-gradient(45deg, rgba(238, 161, 99, 0.25) 0.25em, transparent 0.25em) 0 0;
+    background-size: 0.75em 0.75em;
+    color: #63b0ee;
+}
+
+@keyframes zigzag {
+    100% {
+        background-position: 1em 0, 1em 0, -0.75em 0, -0.75em 0;
+   }
+}
+
+.btn-6 {
+    color: #82f6d8;
+}
+.btn-6:hover {
+    animation: pulse 1s ease-in infinite;
+    background: radial-gradient(circle, rgba(249, 135, 155, 0.25) 43%, transparent 50%) 0 0 / 1em 1em, radial-gradient(circle, rgba(249, 135, 155, 0.25) 43%, transparent 50%) 0.5em 0.5em / 2em 2em;
+    color: #0bdcb7;
+}
+@keyframes pulse {
+    50% {
+        background-position: 0.66em 0.66em, -0.33em -0.33em;
+   }
+    100% {
+        background-size: 2em 2em, 1em 1em;
+        background-position: -1.5em -1.5em, -1em -1em;
+   }
+}
